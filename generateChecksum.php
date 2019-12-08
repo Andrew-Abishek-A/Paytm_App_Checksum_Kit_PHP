@@ -7,6 +7,8 @@ require_once("./lib/config_paytm.php");
 require_once("./lib/encdec_paytm.php");
 $checkSum = "";
 
+$ heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php
+
 // below code snippet is mandatory, so that no one can use your checksumgeneration url for other purpose .
 $findme   = 'REFUND';
 $findmepipe = '|';
